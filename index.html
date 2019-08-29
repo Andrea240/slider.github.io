@@ -35,7 +35,9 @@
         position: absolute;
         height: 45%;
         list-style: none;
-        box-shadow: 3px 6px 5px black;
+        -webkit-box-shadow: 9px 9px 14px 0px rgba(50, 50, 50, 0.88);
+        -moz-box-shadow: 9px 9px 14px 0px rgba(50, 50, 50, 0.88);
+        box-shadow: 9px 9px 14px 0px rgba(50, 50, 50, 0.88);
         transition: 3s;
     }
     .slide:nth-child(1) {
@@ -96,15 +98,15 @@
             slideItems[1].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 1; height: 55%; margin-top: 7%;'
             }
             if(click === 4) {
-            slideItems[1].style.cssText = 'margin-left: 60%; line-height: 100%; z-index: 3;'
+            slideItems[1].style.cssText = 'margin-left: 60%; line-height: 100%; z-index: 1;'
             slideItems[2].style.cssText = 'margin-left: 10%; line-height: 100%;'
-            slideItems[0].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 1; height: 55%; margin-top: 7%;'
+            slideItems[0].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 3; height: 55%; margin-top: 7%;'
             }
             if(click === 5) {
                 click = 2
-            slideItems[0].style.cssText = 'margin-left: 60%; line-height: 100%;'
+            slideItems[0].style.cssText = 'margin-left: 60%; line-height: 100%; z-index: 2;'
             slideItems[1].style.cssText = 'margin-left: 10%; line-height: 100%;'
-            slideItems[2].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 1; height: 55%; margin-top: 7%;'
+            slideItems[2].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 3; height: 55%; margin-top: 7%;'
             }
 
         }
@@ -113,7 +115,7 @@
             click++
             if(click === 2) {
             slideItems[2].style.cssText = 'margin-left: 60%; line-height: 100%;'
-            slideItems[0].style.cssText = 'margin-left: 10%; line-height: 100%;'
+            slideItems[0].style.cssText = 'margin-left: 10%; line-height: 100%; z-index: 1;'
             slideItems[1].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 1; height: 55%; margin-top: 7%;'
             }else{}
             if(click === 3) {
@@ -129,7 +131,7 @@
             if(click === 5) {
                 click = 2
             slideItems[2].style.cssText = 'margin-left: 60%; line-height: 100%;'
-            slideItems[0].style.cssText = 'margin-left: 10%; line-height: 100%;'
+            slideItems[0].style.cssText = 'margin-left: 10%; line-height: 100%; z-index: 1;'
             slideItems[1].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 1; height: 55%; margin-top: 7%;'
             }
 
