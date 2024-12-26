@@ -21,7 +21,7 @@
     .block {
         width: 40%;
         height: 70vh;
-        border: 1px solid blue;
+        border: 15px solid green;
     }
     .slider__block {
         width: 100%;
@@ -69,74 +69,7 @@
     }
     </style>
     <div class="block">
-         <ul class="slider__block">
-            <li class="slide"></li>
-            <li class="slide"></li>
-            <li class="slide"></li>
-         <span class="next">next</span>
-         <span class="prev">prev</span>
-         </ul>
+         АЛИНА САМАЯ ЛУЧШАЯ И КРАСИВАЯ🤗❤️
     </div>
-    <script>
-        var click = 0
-        var slideItems = document.querySelectorAll('.slide')
-        slideItems[0].style.zIndex = '2'
-        slideItems[0].style.height = '55%'
-        slideItems[0].style.marginTop = '7%'
-        
-        document.querySelector('.next').addEventListener('click', tabNext)
-        function tabNext() {
-            click++
-            if(click === 2) {
-            slideItems[0].style.cssText = 'margin-left: 60%; line-height: 100%; z-index: 1;'
-            slideItems[1].style.cssText = 'margin-left: 10%; line-height: 100%;'
-            slideItems[2].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 1; height: 55%; margin-top: 7%;'
-            }else{}
-            if(click === 3) {
-            slideItems[2].style.cssText = 'margin-left: 60%; line-height: 100%; '
-            slideItems[0].style.cssText = 'margin-left: 10%; line-height: 100%;'
-            slideItems[1].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 1; height: 55%; margin-top: 7%;'
-            }
-            if(click === 4) {
-            slideItems[1].style.cssText = 'margin-left: 60%; line-height: 100%; z-index: 1;'
-            slideItems[2].style.cssText = 'margin-left: 10%; line-height: 100%;'
-            slideItems[0].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 3; height: 55%; margin-top: 7%;'
-            }
-            if(click === 5) {
-                click = 2
-            slideItems[0].style.cssText = 'margin-left: 60%; line-height: 100%; z-index: 2;'
-            slideItems[1].style.cssText = 'margin-left: 10%; line-height: 100%;'
-            slideItems[2].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 3; height: 55%; margin-top: 7%;'
-            }
-
-        }
-        document.querySelector('.prev').addEventListener('click', tabPrev)
-        function tabPrev() {
-            click++
-            if(click === 2) {
-            slideItems[2].style.cssText = 'margin-left: 60%; line-height: 100%;'
-            slideItems[0].style.cssText = 'margin-left: 10%; line-height: 100%; z-index: 1;'
-            slideItems[1].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 1; height: 55%; margin-top: 7%;'
-            }else{}
-            if(click === 3) {
-            slideItems[0].style.cssText = 'margin-left: 60%; line-height: 100%;'
-            slideItems[1].style.cssText = 'margin-left: 10%; line-height: 100%;'
-            slideItems[2].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 1; height: 55%; margin-top: 7%;'
-            }
-            if(click === 4) {
-            slideItems[1].style.cssText = 'margin-left: 60%; line-height: 100%;'
-            slideItems[2].style.cssText = 'margin-left: 10%; line-height: 100%;'
-            slideItems[0].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 1; height: 55%; margin-top: 7%;'
-            }
-            if(click === 5) {
-                click = 2
-            slideItems[2].style.cssText = 'margin-left: 60%; line-height: 100%;'
-            slideItems[0].style.cssText = 'margin-left: 10%; line-height: 100%; z-index: 1;'
-            slideItems[1].style.cssText = 'margin-left: 35%; line-height: 100%; z-index: 1; height: 55%; margin-top: 7%;'
-            }
-
-        }
-    
-    </script>
 </body>
 </html>
